@@ -1,15 +1,15 @@
-// import Hello from './aaa';
+import Hello from './aaa';
 
-// const root = document.getElementById("root");
-// const hello = new Hello('Hello world');
-// hello.sayHello(root);
+const root = document.getElementById("root");
+const hello = new Hello('Hello world');
+hello.sayHello(root);
 
 // 型定義
-// import {notExistSample, primitiveSample, anySample} from './basic';
+import {notExistSample, primitiveSample, anySample} from './basic';
 
-// primitiveSample();
-// notExistSample();
-// anySample();
+primitiveSample();
+notExistSample();
+anySample();
 
 // 関数の型定義
 import { logMessage, logMessageOther, logMessage2, logMessage3, newMessage, newMessage2 } from './function/basic';
