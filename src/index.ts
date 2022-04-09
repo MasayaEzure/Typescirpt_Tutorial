@@ -29,3 +29,10 @@ console.log('Fucntion sumProductsPrice is ', sum);
 
 newMessage('TARO');
 newMessage2('JIRO');
+
+// オブジェクトの型定義
+import objectSample from './object/object';
+import typeAliasSample from './object/alias';
+
+objectSample();
+typeAliasSample();
