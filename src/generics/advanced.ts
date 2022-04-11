@@ -1,0 +1,29 @@
+export default function genericsAdvancedSample() {
+    //  map関数のシグネチャ
+    // ２つ以上のジェネリクス型パラメータを扱う
+    type Map<T, U> = (array: T[], fn: (item: T) => U) => U[]
+
+    // 文字列型から数値型への型変換
+    const mapStringsToNumbers: Map<string, number> = (array, fn) => {
+        const result = [];
+        for (let i = 0; i < array.length; i++) {
+            const item = array[i];
+            result[i] = fn(item);
+        }
+        return result;
+    }
+    const numbers = mapStringsToNumbers(["123", "456", "789"], (item) => Number(item));
+    console.log('mapStringsToNumbers：', numbers);
+    
+    // 数値型から文字列への型変換
+    const mapNumbersToStrings: Map<number, string> = (array, fn) => {
+        const result = [];
+        for (let i = 0; i < array.length; i++) {
+            const item = array[i];
+            result[i] = fn(item);
+        }
+        return result;
+    }
+    const strings = mapNumbersToStrings(numbers, (item) => String(item));
+    console.log('mapNumbersToStrings：', strings);
+}

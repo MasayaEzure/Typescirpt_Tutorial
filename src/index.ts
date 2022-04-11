@@ -36,3 +36,10 @@ import typeAliasSample from './object/alias';
 
 objectSample();
 typeAliasSample();
+
+// ジェネリック型とぽりポリモーフィズム
+import genericsBasicSample from './generics/basic';
+import genericsAdvancedSample from './generics/advanced';
+
+genericsBasicSample();
+genericsAdvancedSample();
